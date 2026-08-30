@@ -3,11 +3,11 @@
 int quantPostes(int m, int p) {
     int postes = 0, distancia = 0;
     while(distancia <= m) {
-        postes +=1;
-        distancia +=p;
+        postes++;
+        distancia += p;
     }
-    if(distancia > m) {
-        postes +=1;
+    if(distancia - p != m) {
+        postes++;
     }
     return postes;
 }
